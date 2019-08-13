@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATR's first django App :D </title>
+</head>
+<body>
+    <div>
+      <!---  {% for person in persons %}
+            <ul>
+                <li><a href="#">{{ person.full_name }}</a></li>
+            </ul>
+        {% endfor %}
+        Hahaha,stupid tua! Will do rest of the stuff tomorrow
+       -->
+
+          <form method="post">
+              {% csrf_token %}
+              <div class="form-group">
+              {{ form.as_p }}
+              </div>
+              <input class="btn btn-primary" type="submit" value="Save" />
+          </form>
+    </div>
+    <div>
+          {% for i in wdata %}
+          <ul>
+              {% for j in i %}
+              <li> <h2> {{ j }} </h2></li>
+              {% endfor %}
+          </ul>
+
+          {% endfor %}
+    </div>
+
+</body>
+</html>
