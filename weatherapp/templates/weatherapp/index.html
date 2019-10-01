@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>ATR's first django App :D </title>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
     <div>
@@ -11,16 +14,14 @@
             </ul>
         {% endfor %}
         Hahaha,stupid tua! Will do rest of the stuff tomorrow
-       -->
-
-          <form method="post">
+        <form method="post">
               {% csrf_token %}
               <div class="form-group">
               {{ form.as_p }}
               </div>
               <input class="btn btn-primary" type="submit" value="Save" />
           </form>
-    </div>
+    </div>-->
     <div>
           {% for i in wdata %}
           <ul>
